@@ -9,11 +9,17 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="style/grid.css">
         <link rel="stylesheet" href="style/helper.css">
-        <!--<link rel="stylesheet" href="style/debug.css">-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="style/custom.js"></script>
     </head>
     <style>
         #background-video {
-          width: 100%;
+            z-index: -1;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
         }
         .navbar {
             background-color: #363636!important;
@@ -32,11 +38,31 @@
         .navbar-item.header {
             font-size: 18px;
         }
+        .tile.is-child {
+            background-position: center!important;
+            background-size: cover!important;
+            background-repeat: no-repeat!important;
+            margin: 0 4px!important;
+        }
+
+        /*Background Image for tiles*/
+        #tile1 {background: url('static/Homes/Bay Street/bay_street_home_sf_winder_gibson_02.1000x0.jpg')}
+        #tile2 {background: url('static/Homes/cole/modern-architecture-residential-deck-urban-infill-house-winder-gibson-design.1000x0.jpg')}
+        #tile3 {background: url('static/Homes/dolores/21.1000x0.jpg')}
+        #tile4 {background: url('static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_04.1000x0.jpg')}
+        #tile5 {background: url('static/Homes/Noe/twilights_10.1000x0.jpg')}
+        #tile6 {background: url('static/Homes/texas/312_texas_v1_2_0006.1000x0.jpg')}
+        #tile7 {background: url('static/Homes/Greenwhich/9_5.1000x0.jpg')}
+        #tile8 {background: url('static/Homes/market street/modern-architecture-residential-living-room-loft-market-street-penthouse-winder-gibson-design.1000x0.jpg')}
+        #tile9 {background: url('static/Homes/willow glen/contemporary_architecture_residential_rear_facade_willow_glen_sf_winder_gibson.1000x0.jpg')}
+        #tile10 {background: url('static/Homes/pacific heights/traditional-architecture-residential-living-room-wood-pacific-heights-winder-gibson-design.1000x0.jpg')}
+
      </style>
     <body>
-        <section class="hero is-fullheight is-black">
+        <!--Header Section-->
+        <section class="hero is-fullheight">
             <video class="hero-video" id="background-video" playsinline autoplay muted loop>
-            <source src="static/videos/Hero homes.mp4" type="video/mp4">
+            <!--<source src="static/videos/Hero homes.mp4" type="video/mp4">-->
             Your browser does not support the video tag.
             </video>
             <div class="hero-head">
@@ -67,7 +93,52 @@
                 </nav>
             </div>
         </section>
-        <section class="hero is-fullheight">
+        <!--Project Tile Section-->
+        <section class="hero is-fullheight is-black">
+            <div class="tile is-ancestor">
+                <div class="tile">
+                    <div class="tile is-9 is is-vertical">
+                        <div class="tile is-parent">
+                            <article class="tile is-child" id="button">
+                                <p class="title">Tile 1</p>
+                            </article>
+                            <article class="tile is-child" id="tile2">
+                                <p class="title">Tile 2</p>
+                            </article>
+                            <article class="tile is-child" id="tile3">
+                                <p class="title">Tile 3</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child is-3" id="tile4">
+                                <p class="title">Tile 4</p>
+                            </article>
+                            <article class="tile is-child" id="tile5">
+                                <p class="title">Tile 5</p>
+                            </article>
+                        </div>
+
+                        <div class="tile is-parent">
+                            <article class="tile is-child is-9" id="tile6">
+                                <p class="title">Tile 6</p>
+                            </article>
+                            <article class="tile is-child " id="tile7">
+                                <p class="title">Tile 7</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child" id="tile8">
+                            <p class="title">Tile 8</p>
+                        </article>
+                        <article class="tile is-child" id="tile9">
+                            <p class="title">Tile 9</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <section class="hero is-fullheight">
 
             <div class="hero-body">
                 <h1 class="title"> Art Vandalay</h1>
@@ -77,9 +148,7 @@
                     bay area since 2003.</p>
             </div>
         </section>
-        <section class="hero is-fullheight is-black">
-            Projects
-        </section>
+        <!--Contact Form Section-->
         <section class="hero is-fullheight">
             <div class="hero-body">
                 <div class="container">
@@ -108,6 +177,16 @@
                     </div>
                 </div>
             </div>
+            <!--<a class="button" id="button">Anchor</a>-->
+            <div class="modal" id="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <!-- Any other Bulma elements you want -->
+                </div>
+                <button class="modal-close is-large" aria-label="close" id="close"></button>
+            </div>
+
         </section>
+
     </body>
 </html>
