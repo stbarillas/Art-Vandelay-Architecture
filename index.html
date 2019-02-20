@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="" id="html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,55 +9,11 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="style/grid.css">
         <link rel="stylesheet" href="style/helper.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="style/custom.js"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <!--<link rel="stylesheet" href="style/debug.css">-->
     </head>
-    <style>
-        #background-video {
-            z-index: -1;
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-        }
-        .navbar {
-            background-color: #363636!important;
-            opacity: .8;
-        }
-        .header {
-            font-family: 'Roboto', sans-serif;
-            font-size: 25px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #ffffff;
-        }
-        #nav-architects {
-            color: #ff8840;
-        }
-        .navbar-item.header {
-            font-size: 18px;
-        }
-        .tile.is-child {
-            background-position: center!important;
-            background-size: cover!important;
-            background-repeat: no-repeat!important;
-            margin: 0 4px!important;
-        }
-
-        /*Background Image for tiles*/
-        #tile1 {background: url('static/Homes/Bay Street/bay_street_home_sf_winder_gibson_02.1000x0.jpg')}
-        #tile2 {background: url('static/Homes/cole/modern-architecture-residential-deck-urban-infill-house-winder-gibson-design.1000x0.jpg')}
-        #tile3 {background: url('static/Homes/dolores/21.1000x0.jpg')}
-        #tile4 {background: url('static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_04.1000x0.jpg')}
-        #tile5 {background: url('static/Homes/Noe/twilights_10.1000x0.jpg')}
-        #tile6 {background: url('static/Homes/texas/312_texas_v1_2_0006.1000x0.jpg')}
-        #tile7 {background: url('static/Homes/Greenwhich/9_5.1000x0.jpg')}
-        #tile8 {background: url('static/Homes/market street/modern-architecture-residential-living-room-loft-market-street-penthouse-winder-gibson-design.1000x0.jpg')}
-        #tile9 {background: url('static/Homes/willow glen/contemporary_architecture_residential_rear_facade_willow_glen_sf_winder_gibson.1000x0.jpg')}
-        #tile10 {background: url('static/Homes/pacific heights/traditional-architecture-residential-living-room-wood-pacific-heights-winder-gibson-design.1000x0.jpg')}
-
-     </style>
     <body>
         <!--Header Section-->
         <section class="hero is-fullheight">
@@ -99,9 +55,9 @@
                 <div class="tile">
                     <div class="tile is-9 is is-vertical">
                         <div class="tile is-parent">
-                            <article class="tile is-child" id="button">
+                            <a class="tile is-child" id="tile1">
                                 <p class="title">Tile 1</p>
-                            </article>
+                            </a>
                             <article class="tile is-child" id="tile2">
                                 <p class="title">Tile 2</p>
                             </article>
@@ -177,16 +133,20 @@
                     </div>
                 </div>
             </div>
-            <!--<a class="button" id="button">Anchor</a>-->
+
+            <!--Modal Section-->
             <div class="modal" id="modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
-                    <!-- Any other Bulma elements you want -->
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_02.1000x0.jpg">
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_01.1000x0.jpg">
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_03.1000x0.jpg">
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
                 </div>
                 <button class="modal-close is-large" aria-label="close" id="close"></button>
             </div>
-
         </section>
-
+    <script type="text/javascript" src="style/custom.js"></script>
     </body>
 </html>
