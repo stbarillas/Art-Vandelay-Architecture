@@ -55,7 +55,7 @@
                 <div class="tile">
                     <div class="tile is-9 is is-vertical">
                         <div class="tile is-parent">
-                            <a class="tile is-child" id="tile1">
+                            <a class="tile is-child" id="tile1" onclick="tile_click(this.id)">
                                 <p class="title">Tile 1</p>
                             </a>
                             <article class="tile is-child" id="tile2">
@@ -135,16 +135,23 @@
             </div>
 
             <!--Modal Section-->
-            <div class="modal" id="modal">
+            <div class="modal" id="modal1">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_02.1000x0.jpg">
                     <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_01.1000x0.jpg">
                     <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_03.1000x0.jpg">
-                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_15.1000x0.jpg">
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_05.1000x0.jpg">
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_04.1000x0.jpg">
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_13.1000x0.jpg">
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_19.1000x0.jpg">
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_20.1000x0.jpg">
+                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_14.1000x0.jpg">
+                    <button class="w3-button w3-display-left" id="arrow1a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                    <button class="w3-button w3-display-right" id="arrow1b" onclick="plusDivs(+1, this.id)">&#10095;</button>
                 </div>
-                <button class="modal-close is-large" aria-label="close" id="close"></button>
+                <button class="modal-close is-large" aria-label="close" id="close1" onclick="tile_close(this.id)"></button>
             </div>
         </section>
     <script type="text/javascript" src="style/custom.js"></script>
