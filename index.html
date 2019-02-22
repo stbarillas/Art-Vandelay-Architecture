@@ -58,38 +58,38 @@
                             <a class="tile is-child" id="tile1" onclick="tile_click(this.id)">
                                 <p class="title">Tile 1</p>
                             </a>
-                            <article class="tile is-child" id="tile2">
+                            <a class="tile is-child" id="tile2" onclick="tile_click(this.id)">
                                 <p class="title">Tile 2</p>
-                            </article>
-                            <article class="tile is-child" id="tile3">
+                            </a>
+                            <a class="tile is-child" id="tile3" onclick="tile_click(this.id)">
                                 <p class="title">Tile 3</p>
-                            </article>
+                            </a>
                         </div>
                         <div class="tile is-parent">
-                            <article class="tile is-child is-3" id="tile4">
+                            <a class="tile is-child is-3" id="tile4" onclick="tile_click(this.id)">
                                 <p class="title">Tile 4</p>
-                            </article>
-                            <article class="tile is-child" id="tile5">
+                            </a>
+                            <a class="tile is-child" id="tile5" onclick="tile_click(this.id)">
                                 <p class="title">Tile 5</p>
-                            </article>
+                            </a>
                         </div>
 
                         <div class="tile is-parent">
-                            <article class="tile is-child is-9" id="tile6">
+                            <a class="tile is-child is-9" id="tile6" onclick="tile_click(this.id)">
                                 <p class="title">Tile 6</p>
-                            </article>
-                            <article class="tile is-child " id="tile7">
+                            </a>
+                            <a class="tile is-child " id="tile7" onclick="tile_click(this.id)">
                                 <p class="title">Tile 7</p>
-                            </article>
+                            </a>
                         </div>
                     </div>
                     <div class="tile is-parent is-vertical">
-                        <article class="tile is-child" id="tile8">
+                        <a class="tile is-child" id="tile8" onclick="tile_click(this.id)">
                             <p class="title">Tile 8</p>
-                        </article>
-                        <article class="tile is-child" id="tile9">
+                        </a>
+                        <a class="tile is-child" id="tile9" onclick="tile_click(this.id)">
                             <p class="title">Tile 9</p>
-                        </article>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -133,27 +133,186 @@
                     </div>
                 </div>
             </div>
-
-            <!--Modal Section-->
-            <div class="modal" id="modal1">
-                <div class="modal-background"></div>
-                <div class="modal-content">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_02.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_01.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_03.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_15.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_05.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_04.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_13.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_19.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_20.1000x0.jpg">
-                    <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_14.1000x0.jpg">
-                    <button class="w3-button w3-display-left" id="arrow1a" onclick="plusDivs(-1, this.id)">&#10094;</button>
-                    <button class="w3-button w3-display-right" id="arrow1b" onclick="plusDivs(+1, this.id)">&#10095;</button>
-                </div>
-                <button class="modal-close is-large" aria-label="close" id="close1" onclick="tile_close(this.id)"></button>
-            </div>
         </section>
+        <!--Modal Section-->
+        <div class="modal" id="modal1">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_02.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_01.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_03.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_15.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_05.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_04.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_13.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_19.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_20.1000x0.jpg">
+                <img class="slide bayStreetSlides" src="static/Homes/Bay Street/bay_street_home_sf_winder_gibson_14.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow1a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow1b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close1" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide coleSlides" src="static/Homes/cole/modern-architecture-residential-deck-urban-infill-house-winder-gibson-design.1000x0.jpg">
+                <img class="slide coleSlides" src="static/Homes/cole/modern-architecture-residentia-details-urban-infill-house-winder-gibson-design.1000x0.jpg">
+                <img class="slide coleSlides" src="static/Homes/cole/modern-architecture-residential-ceiling-urban-infill-house-winder-gibson-design.1000x0.jpg">
+                <img class="slide coleSlides" src="static/Homes/cole/modern-architecture-residential-front-facade-urban-infill-house-winder-gibson-design.1000x0.jpg">
+                <img class="slide coleSlides" src="static/Homes/cole/modern-architecture-residential-loft-urban-infill-house-winder-gibson-design.1000x0.jpg">
+                <img class="slide coleSlides" src="static/Homes/cole/modern-architecture-residential-stairs-urban-infill-house-winder-gibson-design.1000x0.jpg">
+                <img class="slide coleSlides" src="static/Homes/cole/modern-architecture-residential-windows-urban-infill-house-winder-gibson-design.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide doloresSlides" src="static/Homes/dolores/21.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/5.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/6_8.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/6_91.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/11.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/23.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/27.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/31.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/97.1000x0.jpg">
+                <img class="slide doloresSlides" src="static/Homes/dolores/99.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow3a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow3b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close3" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal4">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_04.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_06.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_09.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_20.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_23.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_13.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_03.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_17.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_22.1000x0.jpg">
+                <img class="slide eurekaSlides" src="static/Homes/Eureka/eureka_valley_home_sf_winder_gibson_14.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow4a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow4b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close4" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal5">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide noeSlides" src="static/Homes/Noe/twilights_10.1000x0.jpg">
+                <img class="slide noeSlides" src="static/Homes/Noe/6.1000x0.jpg">
+                <img class="slide noeSlides" src="static/Homes/Noe/7.1000x0.jpg">
+                <img class="slide noeSlides" src="static/Homes/Noe/9.1000x0.jpg">
+                <img class="slide noeSlides" src="static/Homes/Noe/10.1000x0.jpg">
+                <img class="slide noeSlides" src="static/Homes/Noe/20.1000x0.jpg">
+                <img class="slide noeSlides" src="static/Homes/Noe/30.1000x0.jpg">
+                <img class="slide noeSlides" src="static/Homes/Noe/11.1000x0.jpg">
+                <img class="slide noeSlides" src="static/Homes/Noe/8.1000x0.jpg">
+                <img class="slide coleSlides" src="static/Homes/Noe/5.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow5a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow5b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close5" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <img class="slide coleSlides" src="">
+                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+        </div>
+
     <script type="text/javascript" src="style/custom.js"></script>
     </body>
 </html>
