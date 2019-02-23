@@ -1,6 +1,4 @@
-// let tile = document.getElementById(tile);
-// let modal = document.getElementById(modal);
-// let close = document.getElementById(close_button);
+
 let html = document.getElementById('html');
 var myTileMapping = {
     tile1: 'modal1',

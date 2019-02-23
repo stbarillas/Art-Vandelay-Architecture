@@ -18,7 +18,7 @@
         <!--Header Section-->
         <section class="hero is-fullheight">
             <video class="hero-video" id="background-video" playsinline autoplay muted loop>
-            <!--<source src="static/videos/Hero homes.mp4" type="video/mp4">-->
+            <source src="static/videos/Hero homes.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
             <div class="hero-head">
@@ -35,10 +35,10 @@
                         <div class="navbar-menu">
                             <div class="navbar-end">
                                 <a class="navbar-item header">
-                                    About
+                                    Portfolio
                                 </a>
                                 <a class="navbar-item header">
-                                    Portfolio
+                                    About
                                 </a>
                                 <a class="navbar-item header">
                                     Contact
@@ -51,7 +51,7 @@
         </section>
         <!--Project Tile Section-->
         <section class="hero is-fullheight is-black">
-            <div class="tile is-ancestor">
+            <div class="tile is-ancestor" id="projects">
                 <div class="tile">
                     <div class="tile is-9 is is-vertical">
                         <div class="tile is-parent">
@@ -94,9 +94,10 @@
                 </div>
             </div>
         </section>
-                <section class="hero is-fullheight">
+        <!--About Section-->
+        <section class="hero is-fullheight is-white">
 
-            <div class="hero-body">
+            <div class="hero-body" id="about">
                 <h1 class="title"> Art Vandalay</h1>
                 <p> San Francisco Architect Art Vandalay received his Bachelors of Architecture Degree
                     from Columbia University in 1987. Upon graduating he worked for Gensler in Chicago, IL. He is
@@ -105,7 +106,7 @@
             </div>
         </section>
         <!--Contact Form Section-->
-        <section class="hero is-fullheight">
+        <section class="hero is-fullheight is-white">
             <div class="hero-body">
                 <div class="container">
                     <div class="field">
@@ -222,95 +223,77 @@
             </div>
             <button class="modal-close is-large" aria-label="close" id="close5" onclick="tile_close(this.id)"></button>
         </div>
-        <div class="modal" id="modal2">
+        <div class="modal" id="modal6">
             <div class="modal-background"></div>
             <div class="modal-content">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
-                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v1_2_0006.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v1_2_0012.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v1_2_0013.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v1_2_0015.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v1_2_0022.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v1_2_0037.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v2_0002.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v2_0003.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v1_2_0023.1000x0.jpg">
+                <img class="slide texasSlides" src="static/Homes/texas/312_texas_v1_2_0014.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow6a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow6b" onclick="plusDivs(+1, this.id)">&#10095;</button>
             </div>
-            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+            <button class="modal-close is-large" aria-label="close" id="close6" onclick="tile_close(this.id)"></button>
         </div>
-        <div class="modal" id="modal2">
+        <div class="modal" id="modal7">
             <div class="modal-background"></div>
             <div class="modal-content">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
-                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/9_5.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/9_1.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/11.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/12.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/13_0.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/13_1.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/13_3.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/30.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/31_0.1000x0.jpg">
+                <img class="slide greenwhichSlides" src="static/Homes/Greenwhich/40_1.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow7a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow7b" onclick="plusDivs(+1, this.id)">&#10095;</button>
             </div>
-            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+            <button class="modal-close is-large" aria-label="close" id="close7" onclick="tile_close(this.id)"></button>
         </div>
-        <div class="modal" id="modal2">
+        <div class="modal" id="modal8">
             <div class="modal-background"></div>
             <div class="modal-content">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
-                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-living-room-loft-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-living-room-loft-1-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-pool-table-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-stairs-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-wet-bar-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-bathroom-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-bedroom-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-kitchen-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-den-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <img class="slide marketStreetSlides" src="static/Homes/market street/modern-architecture-residential-living-room-chair-market-street-penthouse-winder-gibson-design.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow8a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow8b" onclick="plusDivs(+1, this.id)">&#10095;</button>
             </div>
-            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+            <button class="modal-close is-large" aria-label="close" id="close8" onclick="tile_close(this.id)"></button>
         </div>
-        <div class="modal" id="modal2">
+        <div class="modal" id="modal9">
             <div class="modal-background"></div>
             <div class="modal-content">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
-                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_rear_facade_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_rear_yard_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_wood_beam_kitchen_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_wood_counter_sink_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_bedroom_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_ceiling_clerestory_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_front_facade_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_grey_master_bathroom_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_large_living_room_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <img class="slide willowGlenSlides" src="static/Homes/willow glen/contemporary_architecture_residential_night_view_pool_willow_glen_sf_winder_gibson.1000x0.jpg">
+                <button class="w3-button w3-display-left" id="arrow9a" onclick="plusDivs(-1, this.id)">&#10094;</button>
+                <button class="w3-button w3-display-right" id="arrow9b" onclick="plusDivs(+1, this.id)">&#10095;</button>
             </div>
-            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
-        </div>
-        <div class="modal" id="modal2">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <img class="slide coleSlides" src="">
-                <button class="w3-button w3-display-left" id="arrow2a" onclick="plusDivs(-1, this.id)">&#10094;</button>
-                <button class="w3-button w3-display-right" id="arrow2b" onclick="plusDivs(+1, this.id)">&#10095;</button>
-            </div>
-            <button class="modal-close is-large" aria-label="close" id="close2" onclick="tile_close(this.id)"></button>
+            <button class="modal-close is-large" aria-label="close" id="close9" onclick="tile_close(this.id)"></button>
         </div>
 
     <script type="text/javascript" src="style/custom.js"></script>
