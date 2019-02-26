@@ -23,9 +23,12 @@
 #nav-architects {
     color: #ff8840;
 }
-.navbar-item.header {
-    font-size: 18px;
+.navbar-item.header {font-size: 18px;}
+.navbar-item.header:hover {
+    color: #ff8840;
+    background-color: unset;
 }
+
 .tile.is-child {
     background-position: center!important;
     background-size: cover!important;
@@ -84,7 +87,7 @@
 }
 
 #about-container {
-    background: white;
+    background: #ffffff;
     border-color: #ff8840;
     border-style: double;
     border-width: thick;
@@ -98,4 +101,31 @@
 }
 #form-title {
     font-size: 30px;
+    color: #4E4E4E;
+}
+.label {color: #4E4E4E}
+
+.button.is-link {
+    background-color: #FFA066;
+    color: #4E4E4E;
+}
+
+.button.is-link:hover {
+    background-color: #4E4E4E;
+    color: #FFA066;
+}
+
+/*Footer Style*/
+#footer-section {
+    background: #5E5E5E;
+}
+
+#footer-container {
+    text-align: center;
+    color: #ffffff;
+    padding: 25px;
+    opacity: .8;
+}
+.icons {color: #ff8840;}
+.icons:hover {color: #ffffff;
 }
