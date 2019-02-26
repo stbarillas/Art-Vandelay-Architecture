@@ -9,6 +9,8 @@
 .navbar {
     background-color: #363636!important;
     opacity: .8;
+    position: sticky;
+    top: 0;
 }
 .header {
     font-family: 'Roboto', sans-serif;
@@ -16,6 +18,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #ffffff;
+    margin: 0;
 }
 #nav-architects {
     color: #ff8840;

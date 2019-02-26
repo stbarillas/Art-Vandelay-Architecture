@@ -16,38 +16,36 @@
     </head>
     <body>
         <!--Header Section-->
+        <nav class="navbar" style="position: sticky; top: 0;">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <h1 class="header" id="nav-name">
+                            Art Vandelay /
+                        </h1>
+                        <h1 class="header" id="nav-architects">/ Architect</h1>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item header">
+                            Portfolio
+                        </a>
+                        <a class="navbar-item header">
+                            About
+                        </a>
+                        <a class="navbar-item header">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <section class="hero is-fullheight">
             <video class="hero-video" id="background-video" playsinline autoplay muted loop>
             <source src="static/videos/Hero homes.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
-            <div class="hero-head">
-                <nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-brand">
-                            <a class="navbar-item">
-                                <h1 class="header" id="nav-name">
-                                    Art Vandelay /
-                                </h1>
-                                <h1 class="header" id="nav-architects">/ Architect</h1>
-                            </a>
-                        </div>
-                        <div class="navbar-menu">
-                            <div class="navbar-end">
-                                <a class="navbar-item header">
-                                    Portfolio
-                                </a>
-                                <a class="navbar-item header">
-                                    About
-                                </a>
-                                <a class="navbar-item header">
-                                    Contact
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
         </section>
         <!--Project Tile Section-->
         <section class="hero is-fullheight is-black">
@@ -303,7 +301,6 @@
             </div>
             <button class="modal-close is-large" aria-label="close" id="close9" onclick="tile_close(this.id)"></button>
         </div>
-
     <script type="text/javascript" src="style/custom.js"></script>
     </body>
 </html>
