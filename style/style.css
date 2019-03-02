@@ -26,7 +26,6 @@
 #nav-architects {
     color: #ff8840;
 }
-.navbar-item {width: 100%}
 .navbar-item.header {font-size: 18px;}
 .navbar-item.header:hover {
     color: #ff8840;
