@@ -21,15 +21,4 @@
     line-height: 3;
 }
 
-@media (max-width: 768px) {
-	.desktop {
-		display: none;
-	}
-}
-
-@media (min-width: 769px) {
-	.portable {
-		display: none;
-	}
-}
 
