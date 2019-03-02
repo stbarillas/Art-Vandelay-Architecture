@@ -26,11 +26,14 @@
 #nav-architects {
     color: #ff8840;
 }
+.navbar-item {width: 100%}
 .navbar-item.header {font-size: 18px;}
 .navbar-item.header:hover {
     color: #ff8840;
     background-color: unset;
 }
+    /*Media Queries for navbar*/
+@media (max-width: 362px) {.header {font-size: 20px}}
 
 /*Recent Projects Style*/
 .tile.is-child {
@@ -82,6 +85,11 @@
     background: #363636!important;
     opacity: .8;
 }
+.tile.is-ancestor {
+    width: 100%;
+    margin: 0!important;
+}
+
 .tile.title {
     background: #363636;
     padding: 5px;
@@ -94,8 +102,7 @@
 .tile.is-child:hover .tile.title {
     opacity: .8;
 }
-
-.column {margin: 30px}
+.columns {width: 100%}
 
     /*Media queries for projects */
 @media (max-width: 768px) {
