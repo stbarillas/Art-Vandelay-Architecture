@@ -1,11 +1,23 @@
 /*Hero Style*/
-#background-video {
-    z-index: -1;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+.hero.header {height: 100vh}
+
+.video-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+}
+    /*Hero background media queries*/
+@media (min-width: 1024px) {.video{width: 100%}}
+
+@media (max-width: 1023px) {
+    .hero.header {
+        background-image: url("../static/hero/480143_0.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .video-container {display: none}
 }
 
 /*Navbar Style*/
