@@ -24,8 +24,8 @@
 .navbar {
     background-color: #363636!important;
     opacity: .8;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
 }
 .header {
     font-family: 'Roboto', sans-serif;
