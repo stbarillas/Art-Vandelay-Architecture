@@ -193,6 +193,7 @@
     color: #ffffff;
     padding: 25px;
     opacity: .8;
+    max-width: 350px;
 }
 .icons {color: #ff8840;}
 .icons:hover {color: #ffffff;
