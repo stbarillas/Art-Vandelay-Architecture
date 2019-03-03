@@ -89,3 +89,16 @@ function showDivs(n, tileId) {
   }
   x[slideIndex-1].style.display = "block";
 }
+
+function scrollToProjects() {
+    var x = document.getElementById("projects");
+    x.scrollIntoView({behavior: 'smooth'});
+}
+function scrollToAbout() {
+    var x = document.getElementById("abouts");
+    x.scrollIntoView({behavior: 'smooth'});
+}
+function scrollToContact() {
+    var x = document.getElementById("contact");
+    x.scrollIntoView({behavior: 'smooth'});
+}
