@@ -43,6 +43,8 @@
     color: #ff8840;
     background-color: unset;
 }
+.is-active {color: #ff8840!important;}
+
     /*Media Queries for navbar*/
 @media (max-width: 362px) {.header {font-size: 20px}}
 

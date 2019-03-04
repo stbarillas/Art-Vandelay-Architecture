@@ -102,3 +102,15 @@ function scrollToContact() {
     var x = document.getElementById("contact");
     x.scrollIntoView({behavior: 'smooth'});
 }
+//active navbar selection code
+
+var btns = document.getElementsByClassName("navbar-item header");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("is-active");
+    current[0].classList.remove("is-active");
+    this.classList.add("is-active");
+  });
+}
