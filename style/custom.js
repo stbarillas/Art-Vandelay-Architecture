@@ -89,7 +89,10 @@ function showDivs(n, tileId) {
   }
   x[slideIndex-1].style.display = "block";
 }
-
+function scrollToHome() {
+    var x = document.getElementById("home");
+    x.scrollIntoView({behavior: 'smooth'});
+}
 function scrollToProjects() {
     var x = document.getElementById("projects");
     x.scrollIntoView({behavior: 'smooth'});
@@ -103,14 +106,31 @@ function scrollToContact() {
     x.scrollIntoView({behavior: 'smooth'});
 }
 //active navbar selection code
+//
+// var btns = document.getElementsByClassName("navbar-item header");
+//
+// // Loop through the buttons and add the active class to the current/clicked button
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("is-active");
+//     current[0].classList.remove("is-active");
+//     this.classList.add("is-active");
+//   });
+// }
 
-var btns = document.getElementsByClassName("navbar-item header");
+//Active scroll navbar activation
+const links = document.querySelectorAll('.navbar-item.header');
+const sections = document.querySelectorAll('section');
+console.log(links)
 
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("is-active");
-    current[0].classList.remove("is-active");
-    this.classList.add("is-active");
-  });
+function changeLinkState() {
+  let index = sections.length;
+
+  while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+  links.forEach((link) => link.classList.remove('is-active'));
+  links[index].classList.add('is-active');
 }
+
+changeLinkState();
+window.addEventListener('scroll', changeLinkState);

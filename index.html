@@ -29,7 +29,10 @@
                 </div>
                 <div class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item header is-active" onclick="scrollToProjects()">
+                        <a class="navbar-item header" onclick="scrollToHome()">
+                            Home
+                        </a>
+                        <a class="navbar-item header" onclick="scrollToProjects()">
                             Portfolio
                         </a>
                         <a class="navbar-item header" onclick="scrollToAbout()">
@@ -43,7 +46,7 @@
             </div>
         </nav>
         <!--Hero Section-->
-        <section class="hero header">
+        <section class="hero header" id="home">
             <div class="video-container">
                 <video class="video" playsinline autoplay muted loop>
                     <source src="static/videos/Hero homes.mp4" type="video/mp4">
@@ -161,6 +164,7 @@
                         </div>
                     </a>
                 </div>
+            </div>
         </section>
         <!--About Section-->
         <section class="hero is-fullheight is-white" id="abouts">
@@ -371,7 +375,7 @@
             <button class="modal-close is-large" aria-label="close" id="close9" onclick="tile_close(this.id)"></button>
         </div>
         <!--Footer-->
-        <section id="footer-section">
+        <div id="footer-section">
             <div class="container center-column" id="footer-container">
                 <div class="columns">
                     <div class="column">
@@ -399,7 +403,7 @@
                 </p>
 
             </div>
-        </section>
+        </div>
     <script type="text/javascript" src="style/custom.js"></script>
     </body>
 </html>

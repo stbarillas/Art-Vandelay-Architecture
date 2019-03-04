@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42993a33-ca39-4e0c-8546-7d3afbfeb535" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/style/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+            <state relative-caret-position="265">
+              <caret line="381" column="10" lean-forward="true" selection-start-line="381" selection-start-column="10" selection-end-line="381" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -28,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+            <state relative-caret-position="385">
+              <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -48,6 +46,12 @@
     <findStrings>
       <find>trans</find>
       <find>\&lt;img class\=\&quot;bayStreetSlides\&quot; src\=\&quot;static\/Homes\/Bay Street\/bay_street_home_sf_winder_gibson_01\.1000x0\.jpg\&quot;\&gt;\n                    \&lt;img class\=\&quot;bayStreetSlides\&quot; src\=\&quot;static\/Homes\/Bay Street\/bay_street_home_sf_winder_gibson_03\.1000x0\.jpg\&quot;\&gt;\n                    \&lt;button class\=\&quot;w3\-button w3\-display\-left\&quot; onclick\=\&quot;plusDivs\(\-1\)\&quot;\&gt;\&amp;\#10094\;\&lt;\/button\&gt;\n                    \&lt;button c</find>
+      <find>hero</find>
+      <find>navbar-item</find>
+      <find>class=&quot;hero</find>
+      <find>class=&quot;hero</find>
+      <find>class=&quot;navbar-item header</find>
+      <find>&lt;section</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -139,12 +143,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550392712897</updated>
-      <workItem from="1551663768558" duration="3013000" />
+      <workItem from="1551663768558" duration="6387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3013000" />
+    <option name="totallyTimeSpent" value="6387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -159,7 +163,7 @@
     <frame x="0" y="23" width="1280" height="713" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18820679" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18820679" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -331,15 +335,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+        <state relative-caret-position="265">
+          <caret line="381" column="10" lean-forward="true" selection-start-line="381" selection-start-column="10" selection-end-line="381" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+        <state relative-caret-position="385">
+          <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
         </state>
       </provider>
     </entry>
