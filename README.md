@@ -1,4 +1,4 @@
-# Showcase Architecture Website
+# 🏠Showcase Architecture Website 🏠
 
 ## Languages and Tools 💻
 - Bulma
